@@ -37,3 +37,12 @@ https://ya-app-health-monitor.cfapps.io/latest/health
 https://ya-app-health-monitor.cfapps.io/ping
 
 ![Capture](https://github.com/aniruthmp/ya-app-health-montior/blob/master/docs/ping.png)
+
+#### Future Item(s)
+1. Polling for health information periodically
+2. Webhooks for slack notification
+3. Pipeline for this repo
+
+## Feedback welcome
+
+This is open source, and would greatly appreciate your input. Feel free to contact <mailto:aparthasarathy@pivotal.io> with any question.
