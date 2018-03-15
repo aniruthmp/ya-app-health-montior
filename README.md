@@ -19,12 +19,16 @@ GET	| /ping	| Similar to `/latest/health`, but gives very basic health informati
 
 #### Test URLs
 https://ya-app-health-monitor.cfapps.io/ondemand/health/account-service
-[!Screenshot](docs/ondemand-account.png)
+[![Capture](https://github.com/aniruthmp/ya-app-health-montior/blob/master/docs/ondemand-account.png)]
+
 https://ya-app-health-monitor.cfapps.io/ondemand/health
-[!Screenshot](docs/ondemand.png)
+[![Capture](https://github.com/aniruthmp/ya-app-health-montior/blob/master/docs/ondemand.png)]
+
 https://ya-app-health-monitor.cfapps.io/latest/health/customer-service
-[!Screenshot](docs/latest-cust.png)
+[![Capture](https://github.com/aniruthmp/ya-app-health-montior/blob/master/docs/latest-cust.png)]
+
 https://ya-app-health-monitor.cfapps.io/latest/health
-[!Screenshot](docs/latest.png)
+[![Capture](https://github.com/aniruthmp/ya-app-health-montior/blob/master/docs/latest.png)]
+
 https://ya-app-health-monitor.cfapps.io/ping
-[!Screenshot](docs/ping.png)
+[![Capture](https://github.com/aniruthmp/ya-app-health-montior/blob/master/docs/ping.png)]
