@@ -1,0 +1,14 @@
+security:
+  basic:
+    enabled: false
+
+#---
+#
+#spring:
+#  profiles: local
+#
+#eureka:
+#  client:
+#    register-with-eureka: false
+#    fetch-registry: false
+
