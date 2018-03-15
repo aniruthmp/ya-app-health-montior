@@ -1,0 +1,8 @@
+security:
+  basic:
+    enabled: false
+eureka:
+  client:
+    enabled: false
+
+monitor: account-service,dummy

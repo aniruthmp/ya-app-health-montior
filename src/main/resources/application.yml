@@ -2,13 +2,5 @@ security:
   basic:
     enabled: false
 
-#---
-#
-#spring:
-#  profiles: local
-#
-#eureka:
-#  client:
-#    register-with-eureka: false
-#    fetch-registry: false
+monitor: account-service,dummy,customer-service
 
