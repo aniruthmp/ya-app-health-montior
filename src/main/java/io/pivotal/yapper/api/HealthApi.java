@@ -1,20 +1,21 @@
-package io.pivotal.appmonitor.api;
+package io.pivotal.yapper.api;
 
-import io.pivotal.appmonitor.domain.App;
-import io.pivotal.appmonitor.model.Ping;
-import io.pivotal.appmonitor.service.HealthService;
+import io.pivotal.yapper.domain.App;
+import io.pivotal.yapper.model.EmailMessage;
+import io.pivotal.yapper.model.Ping;
+import io.pivotal.yapper.model.SlackMessage;
+import io.pivotal.yapper.service.HealthService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 public class HealthApi {
 
-    final HealthService healthService;
+    private final HealthService healthService;
 
     @Autowired
     public HealthApi(HealthService healthService) {
@@ -48,4 +49,15 @@ public class HealthApi {
         return healthService.ping();
     }
 
+    @PostMapping(path = "/slack", consumes = MediaType.APPLICATION_JSON_VALUE,
+            produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> sendSlack(@RequestBody SlackMessage slackMessage) {
+        return healthService.sendSlack(slackMessage);
+    }
+
+    @PostMapping(path = "/email", consumes = MediaType.APPLICATION_JSON_VALUE,
+            produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> email(@RequestBody EmailMessage emailMessage) {
+        return healthService.email(emailMessage);
+    }
 }

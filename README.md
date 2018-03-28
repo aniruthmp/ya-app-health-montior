@@ -20,28 +20,23 @@ GET	| /ping	| Similar to `/latest/health`, but gives very basic health informati
 #### Test URLs
 https://ya-app-health-monitor.cfapps.io/ondemand/health/account-service
 
-![Capture](https://github.com/aniruthmp/ya-app-health-montior/blob/master/docs/ondemand-account.png)
+![Capture](docs/ondemand-account.png)
 
 https://ya-app-health-monitor.cfapps.io/ondemand/health
 
-![Capture](https://github.com/aniruthmp/ya-app-health-montior/blob/master/docs/ondemand.png)
+![Capture](docs/ondemand.png)
 
 https://ya-app-health-monitor.cfapps.io/latest/health/customer-service
 
-![Capture](https://github.com/aniruthmp/ya-app-health-montior/blob/master/docs/latest-cust.png)
+![Capture](docs/latest-cust.png)
 
 https://ya-app-health-monitor.cfapps.io/latest/health
 
-![Capture](https://github.com/aniruthmp/ya-app-health-montior/blob/master/docs/latest.png)
+![Capture](docs/latest.png)
 
 https://ya-app-health-monitor.cfapps.io/ping
 
-![Capture](https://github.com/aniruthmp/ya-app-health-montior/blob/master/docs/ping.png)
-
-#### Future Item(s)
-1. Polling for health information periodically
-2. Webhooks for slack notification
-3. Pipeline for this repo
+![Capture](docs/ping.png)
 
 ## Feedback welcome
 

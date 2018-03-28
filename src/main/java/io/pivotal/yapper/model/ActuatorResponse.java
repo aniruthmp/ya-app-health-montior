@@ -1,4 +1,4 @@
-package io.pivotal.appmonitor.model;
+package io.pivotal.yapper.model;
 
 import lombok.Data;
 

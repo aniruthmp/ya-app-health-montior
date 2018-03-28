@@ -2,5 +2,44 @@ security:
   basic:
     enabled: false
 
-monitor: account-service,dummy,customer-service
+monitor: App1,App2
+dbretain: 7
 
+cron:
+  poll-health: "0 0/5 * * * ?"
+  clean-db: "0 0 6 * * ?"
+
+slack:
+  url: <Slack Incoming WebHook URL>
+  disabled: true
+
+mail:
+  disabled: true
+  receiver: aniruth.parthasarathy@aa.com
+  sender: noreply.techops.soa@aa.com
+
+spring:
+  jpa:
+    properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+    hibernate.ddl-auto: update
+  mail:
+    host: <smtp>
+    port: 25
+    properties.mail.smtp:
+      starttls.enable: true
+
+eureka:
+  client:
+    enabled: true
+
+management:
+  security:
+    enabled: false
+
+---
+
+spring:
+  profiles: local
+
+mail:
+  disabled: false

@@ -1,20 +1,19 @@
-package io.pivotal.appmonitor;
+package io.pivotal.yapper;
+
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
-import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@RefreshScope
-public class AppmonitorApplication {
+public class YapperApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AppmonitorApplication.class, args);
+		SpringApplication.run(YapperApplication.class, args);
 	}
 
 	@Bean
@@ -23,3 +22,4 @@ public class AppmonitorApplication {
 		return new RestTemplate();
 	}
 }
+
